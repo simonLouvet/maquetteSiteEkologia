@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Prototype - Accueil</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="design/css/bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="design/css/style.css" media="all" />
+        <script type="text/javascript" src="design/js/jquery.min.js"></script>
+        <script type="text/javascript" src="design/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="design/js/helper.js"></script>
+        <script type="text/javascript" src="design/js/ckeditor/ckeditor.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-sm-2">
+                        <a href="#"></a>
+                    </div>
+
+                    <div class="menu col-sm-8">
+                        <ul class="row list-unstyled">
+                            <li class="col-sm-3"><a href="#">Groupes</a></li>
+                            <li class="col-sm-3"><a href="#">La communauté</a></li>
+                            <li class="col-sm-3"><a href="#">Administration</a></li>
+                            <li class="col-sm-3"><a href="#">Page 1</a></li>
+                            <li class="col-sm-3"><a href="#">Page 2</a></li>
+                            <li class="col-sm-3"><a href="#">Page 3</a></li>
+                            <li class="col-sm-3"><a href="#">Page 4</a></li>
+                            <li class="col-sm-3"><a href="#">Autre page</a></li>
+                            <li class="col-sm-3"><a href="#">Lien X</a></li>
+                            <li class="col-sm-3"><a href="#">Lien Y</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="user-block col-sm-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Mon compte
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Informations</a></li>
+                                    <li><a href="#">Mes groupes</a></li>
+                                    <li><a href="#">Déconnexion</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Page 1</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Page 2 <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu multi-level">
+                                    <li><a href="#">Sous page 2.1</a></li>
+                                    <li><a href="#">Sous Page 2.2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Groupes</a></li>
+                            <li><a href="#">La communauté</a></li>
+                            <li><a href="#">Administration</a></li>
+                            <li><a href="#"><i class="glyphicon glyphicon-question-sign"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <form method="post" action="#" class="form-inline">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                                </span>
+                                <input type="text" name="search" class="form-control" placeholder="Recherche" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li class="active">Xyz</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="body">
+            <div class="container">
+                <form method="post" action="">
+                    <div id="tabs-registration" class="tabs row">
+                        <div class="col-sm-3">
+                            <ul class="nav nav-pills nav-stacked links">
+                                <li><a href="#tabs-informations">Informations générales</a></li>
+                                <li><a href="#tabs-description">Description</a></li>
+                                <li><a href="#tabs-interest">Intérêts</a></li>
+                                <li><a href="#tabs-entity">Personnes morales</a></li>
+                                <li><a href="#tabs-joining">Adhésion</a></li>
+                                <li><a href="#tabs-partnership">Partenariat</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-9">
+                            <div id="tabs-informations" class="tabs-content">
+                                <h2>Informations générales</h2>
+                                <div class="form-horizontal">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-geninfo-name" class="control-label col-sm-4">Nom</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="name" id="form-geninfo-name" placeholder="nom" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-firstname" class="control-label col-sm-4">Prénom</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="firstname" id="form-geninfo-firstname" placeholder="prenom" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-birthdate" class="control-label col-sm-4">Date naissance</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="birthdate" id="form-geninfo-birthdate" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-address" class="control-label col-sm-4">N° et voie</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="address" id="form-geninfo-address" placeholder="N° et voie" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-zipcode" class="control-label col-sm-4">Code Postal</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="zipcode" id="form-geninfo-zipcode" placeholder="code postal" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-city" class="control-label col-sm-4">Ville</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="ville" id="form-geninfo-city" placeholder="ville" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-country" class="control-label col-sm-4">Pays</label>
+                                            <div class="col-sm-8">
+                                                <input type="text" name="country" id="form-geninfo-country" placeholder="pays" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-geninfo-email" class="control-label col-sm-4">Mail</label>
+                                            <div class="col-sm-8">
+                                                <input type="email" name="mail" id="form-geninfo-email" placeholder="mail" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-password" class="control-label col-sm-4">Mot de passe</label>
+                                            <div class="col-sm-8">
+                                                <input type="password" name="password" id="form-geninfo-password" placeholder="mot de passe" class="form-control" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="form-geninfo-picture" class="control-label col-sm-4">Photo</label>
+                                            <div class="col-sm-8">
+                                                <input type="url" name="picture" id="form-geninfo-picture" placeholder="entrez une url" class="form-control"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="photo col-sm-offset-4 col-sm-8">
+                                            <a href="#" style="display: block;background-color: red;float: right;width:100%;height: 100px;"></a>
+                                        </div> 
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-description" class="tabs-content">
+                                <h2>Description</h2>
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <textarea id="tabs-description-editor" name="description" class="form-control">
+                                                This is my textarea to be replaced with CKEditor.
+                                            </textarea>
+                                            <script>CKEDITOR.replace('tabs-description-editor')</script>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-interest" class="tabs-content">
+                                <h2>Intérêts</h2>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div id="form-search-interest" class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="interest" id="form-search-interest-interest" placeholder="Recherchez votre intérêt" class="form-control" />
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input type="submit" value="Rechercher" class="btn btn-primary" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="word-cloud">
+                                            NUAGE DE MOTS
+                                        </div>
+                                        <div id="form-add-interest" class="form-horizontal">
+                                            <div class="form-group">
+                                                <div class="col-sm-9">
+                                                    <input type="text" name="interest" id="form-add-interest-interest" placeholder="Entrez votre intérêt" class="form-control" />
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <input type="submit" value="Ajouter" class="btn btn-primary" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <tbody>
+                                                <tr><td>Intérêt 1</td></tr>
+                                                <tr><td>Intérêt 2</td></tr>
+                                                <tr><td>Intérêt 3</td></tr>
+                                                <tr><td>Intérêt 4</td></tr>
+                                                <tr><td>Intérêt 5</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-entity" class="tabs-content">
+                                <h2>Personnes morales</h2>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <input type="text" name="" id="" class="form-control" />
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select name="" id="" class="form-control">
+                                                    <option>Type</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="text" name="" id="" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="word-cloud">
+                                            NUAGE DE MOTS
+                                        </div>
+                                        <div class="">
+                                            <table class="table table-bordered table-hover table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Nom</th>
+                                                        <th>Type</th>
+                                                        <th>Activité</th>
+                                                        <th>Pays</th>
+                                                        <th>Sélection</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>nom 1</td>
+                                                        <td>Association</td>
+                                                        <td>Activité 1 / Activité 2</td>
+                                                        <td>France</td>
+                                                        <td><input type="checkbox" name="" id="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>nom 2</td>
+                                                        <td>Entreprise</td>
+                                                        <td>Activité 1 / Activité 2</td>
+                                                        <td>France</td>
+                                                        <td><input type="checkbox" name="" id="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>nom 3</td>
+                                                        <td>ONG</td>
+                                                        <td>Activité 1 / Activité 2</td>
+                                                        <td>France</td>
+                                                        <td><input type="checkbox" name="" id="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>nom 4</td>
+                                                        <td>Média</td>
+                                                        <td>Activité 1 / Activité 2</td>
+                                                        <td>France</td>
+                                                        <td><input type="checkbox" name="" id="" /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>nom 5</td>
+                                                        <td>Syndicat</td>
+                                                        <td>Activité 1 / Activité 2</td>
+                                                        <td>France</td>
+                                                        <td><input type="checkbox" name="" id="" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="pull-right">
+                                            <input type="submit" value="Ajouter" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <table class="table table-hover table-striped table-bordered">
+                                            <tbody>
+                                                <tr><td>Personne 1</td></tr>
+                                                <tr><td>Personne 2</td></tr>
+                                                <tr><td>Personne 3</td></tr>
+                                                <tr><td>Personne 4</td></tr>
+                                                <tr><td>Personne 5</td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <a href="#" class="btn btn-default pull-right">Vous ne trouvez pas la personne morale avec laquelle vous êtes lié ?</a>
+                                </div>
+                            </div>
+                            <div id="tabs-joining" class="tabs-content">
+                                <h2>Adhésion</h2>
+                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="joining-chart" class="control-label col-sm-4">Je signe la charte</label>
+                                        <div class="col-sm-8 checkbox">
+                                            <input type="checkbox" name="" id="joining-chart" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="control-label col-sm-4">Payer en ligne</div>
+                                        <div class="col-sm-8">
+                                            <a href="#" class="btn btn-default">Payer en ligne</a>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="joining-other" class="control-label col-sm-4">Je choisi de régler...</label>
+                                        <div class="col-sm-8">
+                                            <textarea class="form-control" name="" id="joining-other"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <input type="submit" value="Valider" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tabs-partnership" class="tabs-content">
+                                <h2>Partenariat</h2>
+                                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+
+                                <div>
+                                    <textarea id="tabs-partnership-editor" name="description" rows="10" cols="80">
+                                        This is my textarea to be replaced with CKEditor.
+                                    </textarea>
+                                    <script>
+                                        CKEDITOR.replace('tabs-partnership-editor');
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pull-right marginTop10">
+                        <input class="btn" name="annuler" type="reset" />
+                        <input class="btn btn-primary" name="valider" type="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-default">Groupes</button>
+                    <button type="button" class="btn btn-default">Contacter les administrateurs du site</button>
+                    <button type="button" class="btn btn-default">Contacts</button>
+                    <button type="button" class="btn btn-default">Informations légales</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+/* functions */
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+/* helpers */
+.hidden {
+    display:none;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+/* Layout */
+body {
+    padding-bottom: 25px;
+}
+
+#header {
+    padding: 5px 0;
+    height: 125px;
+    .row>div {
+        height: 125px;
+    }
+
+    .logo a {
+        display: block;
+        background-color: blue;
+        width: 100%;
+        height: 115px;
+    }
+
+    .menu {
+        position: relative;
+
+        ul {
+            position: absolute;
+            left: 0;
+            righjt: 0;
+            bottom: 0;
+            text-align: center;
+        }
+    }
+
+    .user-block {
+        .panel {
+            height: 115px;
+        }
+
+        .panel-heading {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .panel-body {
+            padding: 5px;
+
+            .list-unstyled {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+#nav {
+    .inline {
+        display: inline;
+    }
+
+    margin-bottom: 5px;
+}
+
+#body {
+    margin-bottom: 10px;
+
+    .content {
+        text-align: justify;
+    }
+
+    .aside {
+        .thumbnail {
+            text-align: center;
+        }
+    }
+}
